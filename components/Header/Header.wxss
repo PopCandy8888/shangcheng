@@ -1,0 +1,13 @@
+.search {
+  height: 90rpx;
+  padding: 20rpx;
+  background-color: #eb4450;
+}
+.search navigator {
+  padding: 5px 0;
+  text-align: center;
+  background-color: #fff;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+  color: #ccc;
+}

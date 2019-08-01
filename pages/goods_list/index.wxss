@@ -1,0 +1,28 @@
+.item {
+  padding: 20rpx 0;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.item .left {
+  flex: 1;
+  text-align: center;
+}
+.item .left image {
+  width: 70%;
+}
+.item .right {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.item .right .text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+.item .right .price {
+  color: var(--themeColor);
+  font-size: 40rpx;
+}

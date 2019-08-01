@@ -1,0 +1,11 @@
+<view class="continaer">
+    <view class="title">
+        <view class="item-title {{item.isActive?'active':''}}"
+         wx:for="{{tabs}}"
+         wx:key="id"
+         bindtap="handlechange"
+         data-index="{{index}}"
+         >{{item.name}}</view>
+    </view>
+    <slot ></slot>
+</view>

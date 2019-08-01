@@ -1,0 +1,36 @@
+<Header></Header>
+<view class="category">
+    <scroll-view scroll-y class="category_left">
+        <view wx:for="{{categoryLeftList}}"
+         wx:key="cat_id"
+         bindtap="handlechangeindex"
+         data-index="{{index}}"
+         class="{{index===currentIndex?'active':''}}"
+         >{{item.name}}</view>
+    </scroll-view>
+    <scroll-view scroll-y class="category_right" scroll-top="{{scopetop}}" >
+        <view class="goodsItem"
+         wx:for="{{categoryGoodsList}}"
+         wx:key="cat_id"
+         wx:for-index="index1"
+         wx:for-item="item1">
+            <view class="goodsTitle">
+                <text class="delimati">/</text>
+                <text class="goodsName">{{item1.cat_name}}</text>
+                <text class="delimati">/</text>
+            </view>
+            <view class="goodsList">
+            <navigator
+            wx:for="{{item1.children}}"
+            wx:key="cat_id"
+            wx:for-index="index2"
+            wx:for-item="item2"
+            url="/pages/goods_list/index?cid={{item2.cat_id}}"
+             >
+            <image mode="widthFix" src="{{item2.cat_icon}}"></image>
+            <view class="cat_name">{{item2.cat_name}}</view>
+            </navigator>
+            </view>
+        </view>
+    </scroll-view>
+</view>
