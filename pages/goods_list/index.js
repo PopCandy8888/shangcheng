@@ -61,7 +61,7 @@ Page({
       title: "加载中"
     });
     request({ url: "/goods/search", data: this.queryParams }).then(result => {
-      console.log(result);
+      // console.log(result);
       // 计算总页数
       this.allTotal = Math.ceil(result.total / this.queryParams.pagesize);
       this.setData({
@@ -75,7 +75,7 @@ Page({
   },
   // 处理点击事件
   handlechangeIndex(e) {
-    console.log(e);
+    // console.log(e);
     const { index } = e.detail;
     let { tabs } = this.data;
     tabs.map((v, i) => {

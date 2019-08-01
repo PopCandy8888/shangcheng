@@ -1,0 +1,106 @@
+page{
+  padding-bottom: 90rpx;
+}
+.continaer {
+  swiper {
+    height: 67vw;
+    justify-content: center;
+    text-align: center;
+    .swiper-item {
+      image {
+        width: 60%;
+      }
+    }
+  }
+  .title {
+    padding: 0 10rpx;
+    .price {
+      display: flex;
+      color: var(--themeColor);
+      font-size: 36rpx;
+      font-weight: 600;
+      padding: 0 20rpx;
+    }
+    .title-text {
+      padding: 20rpx 0;
+      border-bottom: 10rpx solid #ccc;
+      display: flex;
+      border-top: 10rpx solid #ccc;
+      .name {
+        padding: 0 20rpx;
+        flex: 4;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        height: 70rpx;
+      }
+      .icon {
+        display: flex;
+        border-left: 1px solid #000;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .iconfont {
+          background-color: red;
+          font-size: 40rpx;
+        }
+        .shoucang {
+        }
+      }
+    }
+  }
+  .goods_detail {
+    padding: 0 10rpx;
+    //   display: flex;
+    .goods-text {
+      padding: 20rpx;
+      font-size: 36rpx;
+      color: var(--themeColor);
+      font-weight: 600;
+      border-bottom: 5px solid #ccc;
+    }
+  }
+  .bottom-item {
+    display: flex;
+    height: 90rpx;
+    width: 100%;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    .tool_item {
+      display: flex;
+      flex: 1;
+      position: relative;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      button {
+        position: absolute;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        // background-color: red;
+      }
+    }
+    .btn_cart{
+      display: flex;
+      flex: 2;
+      background-color: orange;
+      font-weight: 600;
+      color: #fff;
+    }
+    .btn_buy{
+      display: flex;
+      flex: 2;
+      background-color: orangered;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+}
