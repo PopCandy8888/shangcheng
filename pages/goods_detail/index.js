@@ -59,11 +59,11 @@ Page({
       wx.setStorageSync("cart", cart);
       // 添加购物车成功的提示
       wx.showToast({
-        title: '购买成功',
+        title: '加入购物车成功',
         icon: 'success',
         // 遮罩层 蒙版
         //  mask：true 但是用户 点击 按钮的时候没有反应！！
-        // mask: true
+        mask: true
       });
 
 

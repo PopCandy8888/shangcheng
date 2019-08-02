@@ -1,2 +1,22 @@
-<!--pages/cart/index.wxml-->
-<text>pages/cart/index.wxml</text>
+<view class="continaer">
+    <!-- 收货地址 -->
+    <view class="adress-btn">
+        <button wx:if="{{!(adress&&adress.all)}}" open-type="primary" bindtap="handleChooesAdress">
+            添加收获地址
+        </button>
+        <view wx:else class="adres">{{adress.all}}</view>
+    </view>
+</view>
+<!-- 收获地址结束 -->
+<!-- 优购生生活馆 -->
+<view class="goods">
+    <view class="title">优购生活馆</view>
+    <view class="goods-list">
+        <image></image>
+        <view class="goods-detail">
+            <view class="goods-name"></view>
+            <view class="goods-price"></view>
+        </view>
+    </view>
+</view>
+<!-- 优购生生活馆结束 -->

@@ -1,1 +1,10 @@
-/* pages/cart/index.wxss */
+.continaer {
+  padding: 0 20rpx;
+  border-bottom: 20rpx solid #ccc;
+}
+.continaer .adress-btn {
+  padding: 40rpx 0;
+}
+.continaer .adress-btn button {
+  width: 50%;
+}
